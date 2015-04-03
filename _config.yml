@@ -3,9 +3,9 @@ permalink:        pretty
 relative_permalinks: true
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
-url:              http://getpoole.com
+title:            Ali OYGUR
+tagline:          Ali OYGUR's Blog
+url:              http://alioygur.github.io
 paginate:         1
 baseurl:          /
 author:
