@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="page-content wc-container">
-	
+
 	<div class="post">
 		<h1>{{ page.title }}</h1>
 		<span class="post-date">{{ page.date | date_to_string }}</span>
@@ -27,6 +27,19 @@ layout: default
 	</div>
 	{% endif %}
 
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES * * */
+        var disqus_shortname = 'alioygur';
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+
 	<div class="post-footer">
 		<div class="column-1">
 			{% if page.previous %}
@@ -45,4 +58,4 @@ layout: default
 		</div>
 	</div>
 </div>
- 
+
