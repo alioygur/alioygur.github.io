@@ -13,24 +13,24 @@ url: http://alioygur.github.io
 harmony:
   name: Harmony
   # Little description about your site
-  description: Harmony is free responsive jekyll theme.
-  meta_description: Harmony is free responsive jekyll theme. This will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  description: Ali OYGUR
+  meta_description: Buradaki bilgiler öncelikle kendime nottur. Doğru olduğunu misafirlere garanti etmem.
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
-    name: Gayan Virajith
-    email: gayanvirajith@gmail.com
-    url: http://gayanvirajith.github.io
+    name: Ali OYGUR
+    email: alioygur@gmail.com
+    url: http://alioygur.github.io
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-xxxx-x
 
   # Profile links, leave blank to ignore
   social:
-    github: gayanvirajith
-    twitter: gayanvirajith
-    facebook: gayanvirajith
-    gplus: +GayanVirajith
-    dribble: gayan
+    github: alioygur
+    twitter: alioygur
+    facebook: alioygur
+    gplus:
+    dribble:
     pinterest:
   # Toggle disclaimer in footer
   show_disclaimer: true
