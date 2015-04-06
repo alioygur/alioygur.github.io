@@ -1,120 +1,122 @@
-# Poole
+# Harmony
 
-*The Strange Case of Dr. Jekyll and Mr. Hyde* tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel's supporting cast is a man by the name of Mr. Poole, Dr. Jekyll's loyal butler.
+Harmony is a responsive jekyll theme. 
 
------
-
-Poole is the butler for [Jekyll](http://jekyllrb.com), the static site generator. It's designed and developed by [@mdo](https://twitter.com/mdo) to provide a clear and concise foundational setup for any Jekyll site. It does so by furnishing a full vanilla Jekyll install with example templates, pages, posts, and styles.
-
-![Poole](https://f.cloud.github.com/assets/98681/1834359/71ae4048-73db-11e3-9a3c-df38eb170537.png)
-
-See Poole in action with [the demo site](http://demo.getpoole.com).
-
-There are currently two official themes built on Poole:
-
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Individual theme feedback and bug reports should be submitted to the theme's individual repository.
-
+- Build for jekyll 2.x
+- Support Google analytics and RSS feeds
+- Sass based styles
+- Browser support: IE 8+, Chrome, Safari and Firefox 
+- Fluidly responsive 
 
 ## Contents
 
-- [Usage](#usage)
-- [Options](#options)
-  - [Rems, `font-size`, and scaling](#rems-font-size-and-scaling)
-- [Development](#development)
-- [Author](#author)
+- [Harmony](#harmony)
+- [About Jekyll](#about-jekyll)
+- [How to install/run](#how-to-installrun)
+- [Options/Usage](#optionsusage)
+  - [Header navigation links](#header-navigation-links)
+  - [Footer links](#footer-links)
+  - [Copyrights/Disclaimer statements](#copyrightsdisclaimer-statements)
+- [Screenshots](#screenshots)
+- [Feedback/Bugs/Suggestions](#feedbackbugssuggestions)
+- [Version history](#version-history)
 - [License](#license)
 
+## About jekyll 
 
-## Usage
+[Jekyll](http://jekyllrb.com/) is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes.
 
-### 1. Install Jekyll
+## How to install/run
 
-Poole is built for use with Jekyll, so naturally you'll need to install that. On Macs, it's rather straightforward:
+1. [Fork](https://github.com/web-create/harmony/fork) this repository.
+2. Clone it: git clone https://github.com/YOUR-USERNAME/harmony.
+3. If you completely new to jekyll, please read more about [Jekyll](http://jekyllrb.com/) and [Github pages](https://help.github.com/articles/using-jekyll-with-pages).
+4. Change your directory into cloned repository. 
+5. Run `bundle install`
+6. Edit the _config.yml on root directory. Change `url` property to to 
+`http://127.0.0.1:4000` since you are going to run on localhost.
+7. Run the jekyll server by having: `jekyll serve --baseurl ''` or `rake preview`   
 
-```bash
-$ gem install jekyll
+Try to locate your browser at [http://localhost:4000](http://localhost:4000).
+
+Note: If you are a windows user please refer this nice website - http://jekyll-windows.juthilo.com/ by Julian Thilo to configure ruby + jekyll on windows.
+
+## Options/Usage
+
+Harmony theme has some customizable options. All the configuration details are 
+configured in `_config.yml` file under root of the harmony directory. 
+
+Feel free to change your `name`, `descriptionn`, `meta_description`, `author details`,
+`social media names` and `google analytics id` accordingly. 
+
+``` yml
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: Harmony
+  # Little description about your site
+  description: Harmony is free responsive jekyll theme.
+  meta_description: Harmony is free responsive jekyll theme. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  basetheme: theme-base-01 # pre defined the{{ site.url | prepend: site.baseurl }}mes are darken, blue-water, reddish.
+  author: # Author details
+    name: Gayan Virajith
+    email: gayanvirajith@gmail.com
+    url: http://gayanvirajith.github.io
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-xxxx-x
+
+  # Profile links, leave blank to ignore
+  social: 
+    github: gayanvirajith
+    twitter: gayanvirajith
+    facebook: gayanvirajith
+    gplus: +GayanVirajith
+    dribble: gayan
+    pinterest: 
+  # Toggle disclaimer in footer
+  show_disclaimer: true
 ```
 
-**Windows users:** Windows users have a bit more work to do, but luckily [@juthilo](https://github.com/juthilo) has your back with his [Run Jekyll on Windows](https://github.com/juthilo/run-jekyll-on-windows) guide.
+### Includes 
 
-You may also need to install Pygments, the Python syntax highlighter for code snippets that plays nicely with Jekyll. Read more about this [in the Jekyll docs](http://jekyllrb.com/docs/templates/#code_snippet_highlighting).
+All the partial includes are under `_includes` directory.
 
-### 2a. Quick start
+#### Header navigation links
 
-To help anyone with any level of familiarity with Jekyll quickly get started, Poole includes everything you need for a basic Jekyll site. To that end, just download Poole and start up Jekyll.
+Feel free to add/edit links for your header in the file `header-links.html`.
 
-### 2b. Roll your own Jekyll site
+#### Footer links
 
-Folks wishing to use Jekyll's templates and styles can do so with a little bit of manual labor. Download Poole and then copy what you need (likely `_layouts/`, `*.html` files, `atom.xml` for RSS, and `public/` for CSS, JS, etc.).
+Customize your footer links by editing `_includes/footer-links.html`
 
-### 3. Running locally
+#### Copyrights/Disclaimer statements
 
-To see your Jekyll site with Poole applied, start a Jekyll server. In Terminal, from `/Poole` (or whatever your Jekyll site's root directory is named):
+All the copyrights notes are under `_includes/footer.html`. Also note that you 
+can toggle on/off copyright note from front-end by setting up `show_disclaimer` 
+property in `_config.yml`. 
 
-```bash
-$ jekyll serve
-```
+### Screenshots
+![Home page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web.jpg "Desktop screen")
 
-Open <http://localhost:4000> in your browser, and voilà.
+![Post page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-2.jpg "Post page screenshot")
 
-### 4. Serving it up
+![Blog archive page screenshot](https://raw.githubusercontent.com/web-create/harmony/master/assets/css/images/harmony-web-3.jpg "Blog archive page screenshot")
 
-If you host your code on GitHub, you can use [GitHub Pages](https://pages.github.com) to host your project.
+#### Feedback/Bugs/Suggestions 
 
-1. Fork this repo and switch to the `gh-pages` branch.
-  1. If you're [using a custom domain name](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages), modify the `CNAME` file to point to your new domain.
-  2. If you're not using a custom domain name, **modify the `baseurl` in `_config.yml`** to point to your GitHub Pages URL. Example: for a repo at `github.com/username/poole`, use `http://username.github.io/poole/`. **Be sure to include the trailing slash.**
-3. Done! Head to your GitHub Pages URL or custom domain.
+Please submit as [Github issuee](https://github.com/web-create/harmony/issues/new),
+I am happy to response back.
 
-No matter your production or hosting setup, be sure to verify the `baseurl` option file and `CNAME` settings. Not applying this correctly can mean broken styles on your site.
+Version history
+---------------
 
-## Options
-
-Poole includes some customizable options, typically applied via classes on the `<body>` element.
-
-
-### Rems, `font-size`, and scaling
-
-Poole is built almost entirely with `rem`s (instead of pixels). `rem`s are like `em`s, but instead of building on the immediate parent's `font-size`, they build on the root element, `<html>`.
-
-By default, we use the following:
-
-```css
-html {
-  font-size: 16px;
-  line-height: 1.5;
-}
-@media (min-width: 38em) {
-  html {
-    font-size: 20px;
-  }
-}
-
-```
-
-To easily scale your site's typography and components, simply customize the base `font-size`s here.
-
-
-## Development
-
-Poole has two branches, but only one is used for active development.
-
-- `master` for development.  **All pull requests should be to submitted against `master`.**
-- `gh-pages` for our hosted site, which includes our analytics tracking code. **Please avoid using this branch.**
-
-
-## Author
-
-**Mark Otto**
-- <https://github.com/mdo>
-- <https://twitter.com/mdo>
+| Version no. | Description  | Date |
+| --- | --- | --- |
+| 1.0 | Initial release | 9th September 2014 |
+| 1.0.1 | v1.0.1 with minor bug fix | 9th September 2014 |
 
 
 ## License
 
-Open sourced under the [MIT license](LICENSE.md).
-
-<3
+Free / Open sourced under the 
+[MIT](https://github.com/web-create/harmony/blob/master/LICENSE.md).

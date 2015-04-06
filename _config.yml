@@ -1,19 +1,57 @@
+# Harmony Jekyll theme general configurations
+
+# Base URL
+baseurl: /
+
+# Site live URL
+url: http://alioygur.github.io
+
+# Localhost
+# url: http://127.0.0.1:4000
+
+# Harmony theme configuration. Please change accordingly.
+harmony:
+  name: Harmony
+  # Little description about your site
+  description: Harmony is free responsive jekyll theme.
+  meta_description: Harmony is free responsive jekyll theme. This will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
+  author: # Author details
+    name: Gayan Virajith
+    email: gayanvirajith@gmail.com
+    url: http://gayanvirajith.github.io
+
+  # Google Analytics key, leave blank to ignore
+  google_analytics_key: UA-xxxx-x
+
+  # Profile links, leave blank to ignore
+  social:
+    github: gayanvirajith
+    twitter: gayanvirajith
+    facebook: gayanvirajith
+    gplus: +GayanVirajith
+    dribble: gayan
+    pinterest:
+  # Toggle disclaimer in footer
+  show_disclaimer: true
+
+# Conversion / Build settings
+markdown:    kramdown
+highlighter: pygments # this is how you put pygments config in jekyll 2.0 instead of pygments: true
+
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
-# Setup
-title:            Ali OYGUR
-tagline:          Ali OYGUR's Blog
-url:              http://alioygur.github.io
-paginate:         1
-baseurl:          /
-author:
-  name:           Mark Otto
-  url:            https://twitter.com/mdo
-  email:          markdotto@gmail.com
+exclude:
+  - CNAME
+  - Gemfile
+  - Rakefile
+  - README.md
+  - .gitignore
+  - .sass-cache
+  - Gemfile.lock
 
-# Custom vars
-version:          1.0.0
-github:
-  repo:           https://github.com/poole/poole
+# Sass conversion configs
+sass:
+    sass_dir: assets/css/_sass
+    style: :compressed
