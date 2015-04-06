@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hakkımda
+title: About
 permalink: /about/
 ---
 
@@ -8,6 +8,6 @@ Merhaba, ben Ali, İstanbul'da yaşıyorum, yazılım geliştiricisim. (web taba
 
 Burada yazdıklarımın amacı, birilerine bir şeyler öğretmek değil, öğrendiklerimi birine anlatır gibi pekiştirmek ve not tutmaktır.
 
-### İletişim
+### Contact
 
 bana, `alioygur@gmail.com` adresine mail atarak, ya da alt tarafta bulunan sosyal ağlardan ulaşabilirsiniz.
