@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Laravel 4 Eloquent Accessors & Mutators tips tricks
+categories: 
+- laravel
 ---
 
 Laravel 4 Eloquent ORM have a nice feature [Accessors & Mutators](http://laravel.com/docs/eloquent#accessors-and-mutators)
+
+___
 
 **What is this?**
 

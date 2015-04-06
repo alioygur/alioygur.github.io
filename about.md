@@ -1,27 +1,13 @@
 ---
 layout: page
-title: About me
+title: Hakkımda
 permalink: /about/
 ---
 
-Hi, I am Gayan Virajith, a developer (who works on the web) based on Sri Lanka. 
-Graduated from the University College Dublin (National University of Ireland). 
+Merhaba, ben Ali, İstanbul'da yaşıyorum, yazılım geliştiricisim. (web tabanlı yazılımlar, back-end pozisyonda.)
 
-I am Working for [template-factory.nl][tf] also known as [Mearch ICT][m].
-Prefer to serve with Php and Ruby based stacks and also love to work 
-on [Jekyll][jekyll] and [Processwire CMS/CMF][pw].
+Burada yazdıklarımın amacı, birilerine bir şeyler öğretmek değil, öğrendiklerimi birine anlatır gibi pekiştirmek ve not tutmaktır.
 
-### Contact me
+### İletişim
 
-Find me on [Google+][google] / [Github][github] / [Twitter][Twitter] or just say `Hello` at 
-[gayanvirajith@gmail.com](gayanvirajith@gmail.com).
-
-
-[tf]: http://template-factory.nl
-[m]: http://mearch.com
-[pw]: http://processwire.com
-[pwf]: http://processwire.com/talk
-[jekyll]: http://jekyllrb.com
-[github]: https://github.com/gayanvirajith
-[google]: https://plus.google.com/+GayanVirajith
-[twitter]: https://twitter.com/gayanvirajith
+bana, `alioygur@gmail.com` adresine mail atarak, ya da alt tarafta bulunan sosyal ağlardan ulaşabilirsiniz.

@@ -1,9 +1,13 @@
 ---
 layout: post
 title: Php built-in web server ile tanisin 
+categories:
+- php
 ---
 
 Php 5.4 ile birlikte gelen yeni ozellik olan "built-in web server" tukceye sanirim "tumlesik web sunucusu" olarak cevirebiliriz. Biz gelistiricilerin cok isine yarayacak.
+
+___
 
 **Nedir &amp; Ne ise yarar?**
 

@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Git ile son commit nasil degistirilir
+categories:
+- git
 ---
 
 Git surum kontrol sisteminin muhtesem ozellikleri vardir bunlardan biri de "amend" dir.

@@ -1,5 +1,3 @@
-title: Ali OYGUR
-
 # Harmony Jekyll theme general configurations
 
 # Base URL
@@ -13,10 +11,10 @@ url: http://alioygur.github.io
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
-  name: Harmony
+  name: Ali OYGUR
   # Little description about your site
-  description: Ali OYGUR
-  meta_description: Buradaki bilgiler öncelikle kendime nottur. Doğru olduğunu misafirlere garanti etmem.
+  description: Halka açık not defterim.
+  meta_description:
   basetheme: theme-base-01 # pre defined thmes are darken, blue-water, redish.
   author: # Author details
     name: Ali OYGUR
@@ -24,13 +22,13 @@ harmony:
     url: http://alioygur.github.io
 
   # Google Analytics key, leave blank to ignore
-  google_analytics_key: UA-xxxx-x
+  google_analytics_key: UA-6562504-14
 
   # Profile links, leave blank to ignore
   social:
     github: alioygur
     twitter: alioygur
-    facebook: alioygur
+    facebook:
     gplus:
     dribble:
     pinterest:

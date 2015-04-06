@@ -1,9 +1,14 @@
 ---
 layout: post
 title: MySQL komut satiri ipuclari 
+categories:
+- mysql
+- terminal
 ---
 
 Bunun komut satiri ile bir alakasi yok ama bilmek isteyeceginizden eminim. [Michael Widenius](http://en.wikipedia.org/wiki/Michael_Widenius) MySQL e kizinin adini vermistir. Kizinin adi My dir. Hatta MySQL i oracle a sattiktan sonra MySQL i catallayip [MariaDB](https://mariadb.org/) adi altinda gelistirmeye devam etmektedir. Tahmin edersinizki Maria da 2. kizinin adidir. :)
+
+___
 
 Simdi Terminali acip mysql yazarak MySQL komut satirina duselim
 

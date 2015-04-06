@@ -1,11 +1,15 @@
 ---
 layout: post
 title: laravel4 redirect tips & tricks
+categories: 
+- laravel
 ---
 
 laravel have have nice redirect options like `Redirect::guest` and `Redirect::intended`
 
 The `Redirect::intended` create a new redirect response to the previously intended location.
+
+___
 
 **Here is source code**
 

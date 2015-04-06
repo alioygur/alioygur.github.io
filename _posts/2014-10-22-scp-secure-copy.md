@@ -1,6 +1,9 @@
 ---
 layout: post
 title: scp, secure copy
+categories:
+- linux
+- bash
 ---
 
 #scp nedir?
@@ -10,6 +13,8 @@ iki lokasyon arasında dosya transfer eder
 - Dosya transferi ssh üzerinden yapılır.
 - dosya transferleri ssh üzerinden yapıldığı için ssh kadar güvenlidir.
 - aslında `cp` komutu ile hemen hemen aynıdır, sadece transfer ağ üzerinden gerçekleşir.
+
+___
 
 ## Basit kullanım örnekleri
 
