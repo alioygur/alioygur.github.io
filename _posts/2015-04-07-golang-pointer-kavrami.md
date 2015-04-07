@@ -1,3 +1,10 @@
+---
+layout: post
+title: golang, pointer kavramı
+categories:
+- go
+---
+
 Aslında **pointer** kavramı her dilde aynıdır ancak biz örneklerde **go** dilini kullanacağız.
 
 pointer, Programlama dillerinde bellek adreslerini saklayan değişkenlere verilen genel isimdir.
