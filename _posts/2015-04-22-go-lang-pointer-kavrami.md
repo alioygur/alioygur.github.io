@@ -1,6 +1,6 @@
 ---
 layout: post
-title: go lang pointer kavramı
+title: go lang, pointer kavramı
 categories:
 - go
 ---

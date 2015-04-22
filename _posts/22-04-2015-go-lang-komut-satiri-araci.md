@@ -1,6 +1,6 @@
 ---
 layout: post
-title: go lang komut satırı aracı
+title: go lang, komut satırı aracı
 categories:
 - go
 ---
