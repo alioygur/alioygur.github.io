@@ -9,7 +9,7 @@ go dili güçlü bir komut satırı aracı ile gelmektedir. şimdi teker teker b
 
 terminalinizden (kabuk, shell, artık ne diyorsanız :) `go` komutunu çalıştırdığınızda aşağıdaki gibi bir çıktı alacaksınız.
 
-{% highlight bash %}
+{% highlight sh %}
 ➜  alioygur.github.io git:(master) go
 Go is a tool for managing Go source code.
 
@@ -45,4 +45,4 @@ Additional help topics:
     testfunc    description of testing functions
 
 Use "go help [topic]" for more information about that topic.
-{% endhighlight%}
+{% endhighlight %}
