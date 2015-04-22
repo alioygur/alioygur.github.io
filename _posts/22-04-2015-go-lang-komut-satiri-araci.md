@@ -67,3 +67,74 @@ Go paketlerini derlemek için kullanılan komuttur. Eğer gerektiği durumlarda 
     array_linux.go | array_darwin.go | array_windows.go | array_freebsd.go
     
 `go build` işletim sisteminize göre derleme işlemini yapacaktır. Örneğin, Linux kullanıyorsanız sadece  array_linux.go derleyip, diğerlerini yoksayacaktır.
+
+## go clean
+
+Derleyici tarafından oluşturulmuş aşağıdaki  dosyaları temizler: 
+    
+    _obj/            // eski obje klasörü, Makefiles tarafından oluşturulmuş
+    _test/           // eksi test klasörü, Makefiles tarafından oluşturulmuş
+    _testmain.go     // eski gotest dizini, Makefiles tarafından oluşturulmuş
+    test.out         // eski test dizini, Makefiles tarafından oluşturulmuş 
+    build.out        // eksi test dizini, Makefiles tarafından oluşturulmuş 
+    *.[568ao]        // obje dosyaları,  Makefiles tarafından oluşturulmuş 
+
+    DIR(.exe)        // go build tarafıdan oluşturulmuş
+    DIR.test(.exe)   // go test -c tarafından oluşturulmuş
+    MAINFILE(.exe)   // go build MAINFILE.go tarafından oluşturulmuş
+    
+Projelerimi Github'a göndermeden önce genellikle bu komutu çalıştırırım. Yereldeki testler için önemli, ama sürüm takip için gereksiz dosyalar.
+
+## go fmt
+
+Öncede C/C++ ile çalışmış olanlar, hangi kodlama stilinin daha iyi olduğu konusundaki tartışmları biliyordur: K&R-stili ya da ANSI-stili. Go da ise, herkesin kullanmak zorunda olduğu  sadece bir kod stili vardır. Örneğin, açma parantezleri satır sonlarını yazılmalıdır, yeni bir satırda yazılamazlar, eğer bu kurala uymazsanız derleme hatası alacaksınız! Neyse ki, bu kuralları ezberlemek zorunda değilsiniz. `go fmt` bu işi sizin yerinize yapacaktır. Terminalinizde `go fmt <dosya_ismi>.go` komutunu çalıştırmanız yetecektir. Bir çok IDE siz dosyayı kaydettiğinizde otomatik olarak bu komutu çalıştıracaktır. IDE'ler hakkında bir sonraki bölümde daha ayrıntılı bilgi vereceğim.
+
+`gofmt` şeklind değilde  `go fmt -w` şeklinde kullanmanız daha iyi olcaktır. `-w` parametresi formatladıktan sonra değişiklikleri kaydetcektir. `gofmt -w src` ise src altındaki butun dosyaları formatlar.
+
+## go get
+
+Bu komut üçüncü parti paketleri almanızı sağlar. Şuanda; BitBucket, Github, Google Code ve Launchpad desteği sunuyor. Bu komutu çalıştırdığımızda iki şey yapılıyor. Birincisi Go kaynak kodunu indiriyor, ikinci olarakta `go install` komutunu çalıştırıyor. Bu komutu çalıştırmadan önce, gerekli araçları kurudğunuzdan emin olun.
+
+    BitBucket (Mercurial Git)
+    Github (git)
+    Google Code (Git, Mercurial, Subversion)
+    Launchpad (Bazaar)
+    
+Bu komutu kullanmak için, yukarıdaki araçları kurmuş olmanız lazım. `$PATH` değişkenini ayarlamayıda unutmayın. Bu arada, özel alan adlarınıda destekliyor. `go help remote` komutu ile daha ayrıntılı bilgi edinebilrsiniz.
+
+## go install
+
+Bu komut bütün paketleri derleyip oluşan dosyaları, `$GOPATH/pkg` ya da  `$GOPATH/bin` altına taşır.
+
+## go test
+
+Bu komut  `*_test.go` ile biten dosyaları derleyip çalıştırır, gerekli bilgileri ekrana basar.
+
+    ok   archive/tar   0.011s
+    FAIL archive/zip   0.022s
+    ok   compress/gzip 0.033s
+    ...
+    
+Öntanımlı olarak bütün test dosyalarını çalıştırır. `go help testflag` komutunu kullanarak daha ayrıntılı bilgi elde edebilirsiniz.
+
+## go doc
+
+Bir çok insan Go için üçüncü parti bir dökümantasyona aracına gerek olamdığını düşünüyor (aslına bakarsanız ben bir tane yazdım bile [CHM](https://github.com/astaxie/godoc)). Go dökümanları yönetmek için çok güçlü bir araca sahip.
+
+Peki bir paketin dökümantasyonuna nasıl bakabiliriz? Örneğin, Eğer bir `builtin` paket hakkında daha fazla bilgi istiyorsanız, `go doc builtin` komutunu işinizi görecektir. Benzer şekilde, `go doc net/http` komutu ile  `http` paketi hakkında bilgi elde edebilirsiniz. Fonksiyonlar hakkında daha ayrıntılı bilgi istiyorsanız, `godoc fmt Printf` ve  `godoc -src fmt Printf` komutları işinizi görecektir(`-src` fonksiyonun kodlarını göstercektir).
+
+`godoc -http=:8080` komutunu çalıştırın, `127.0.0.1:8080` adresine gidin. `golang.org`'ın lokal versiyonunu görmüş olmanız gerekiyor. Sadece standart paketler hakkında değil, `$GOPATH/pkg` altındaki bütün paketler içinde bilgileri bulabilirsiniz. Büyük Çin Güvenlik duvarından dökümantasyonlara erişemeyenler için.
+
+## Diğer komutlar
+
+Go yukarıda bahsettiklerimizden daha fazla komut sunuyor.
+
+    go fix // versiyon yükseltme
+    go version // Kulladığınız Go sürümü bilgisi
+    go env // Go ile alakalı ortam değişkenleri
+    go list // yüklü paketlerin listesi
+    go run // paketi geçiçi olarak derleyip çalıştırma 
+    
+Go komutlarınin kendi dökümantasyonunda daha ayrıntılı bilgi bulabilirsiniz. `go help <komut_ismi>` ile bu bilgilere erişebilirsiniz.
+
+kaynak: [https://github.com/astaxie/build-web-application-with-golang](https://github.com/astaxie/build-web-application-with-golang)
