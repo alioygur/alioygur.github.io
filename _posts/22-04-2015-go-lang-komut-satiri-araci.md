@@ -46,3 +46,24 @@ Additional help topics:
 
 Use "go help [topic]" for more information about that topic.
 {% endhighlight %}
+
+bu `go` ya ait alt komutları ve nasıl kullanabileceğimizi kısaca özetlemektedir. Şimdi bakalım,
+
+
+## go build
+
+Go paketlerini derlemek için kullanılan komuttur. Eğer gerektiği durumlarda bağımlı olan paketleride otomatik derler.
+
+- Eğer paket  `main` değilde,  bölüm 1.2 deki gibi `mymath` ise, `go build` çalıştığında hiç birşey oluşturulmayacak. Eğer `$GOPATH/pkg` içinde `.a` uzantılı derlemiş haline istiyorsanız,  `go install` komutunu kullanabilirsiniz.
+- Eğer paket `main` ise, aynı dizin içinde çalıştırılabilir haline oluşturcaktır. Eğer oluşacak dosyanın `$GOPATH/bin` içinde olmasını istiyorsanız, `go install` ya da `go build -o ${DİZİN_YOLU}/a.exe` olarak çalıştırın.
+- Dizinde birden fazla go dosyası varsa, ve sadece birini derlemek istiyorsanız, `go build` komutuna dosya ismini argüman olarak vermelisiniz. Örneğin, `go build a.go`. `go build` argüman almaz ise dizindeki bütüm dosyaları derleyecektir.
+- Oluşacak dosyanın isminide önceden belirieyebilirsiniz. Örneğin, `mathapp` projesinde (bölüm 1.2'deki),  `go build -o astaxie.exe` komutu `mathapp.exe` yerine `astaxie.exe` adında bir dosya oluşturacaktır. Öntanımlı isimlendirme ya dizin ismi ya da ilk kaynak kodu içeren dosya ismi olarak seçilmiştir.
+
+( [Go Programlama  Dili Kılavuzu](https://golang.org/ref/spec)'na göre , paket isimleri  `package` anahtar kelimesinden sonra kaynak dosyanın ilk satırına yazılmalıdır. Dizin ismi ile aynı olması zorunlu değildir, çalıştırılabilir dosyanın ismi dizin ismi olacaktır.]) 
+
+- `go build`, `_` ya da `.` ile başlayan dosyaları görmezden gelir.
+- Her işletim sistemi için ayrı dosyalar tutmak isterseniz, işletim sistemi ismini ek olarak kullanabilirsiniz. Örneğin, `array.go`'yu farklı sistemler için yazacaksanız. Dosya isimleri aşağıdaki gibi olabilir:
+    
+    array_linux.go | array_darwin.go | array_windows.go | array_freebsd.go
+    
+`go build` işletim sisteminize göre derleme işlemini yapacaktır. Örneğin, Linux kullanıyorsanız sadece  array_linux.go derleyip, diğerlerini yoksayacaktır.
