@@ -13,9 +13,9 @@ Pointer demek, bir değişkenin veya değerin bellek adresi demektir. bellek adr
 
 Pointer'ların ne olduğu hakkında hiç bilgisi olmayanlar, [wiki](http://tr.wikipedia.org/wiki/%C4%B0%C5%9Faret%C3%A7iler) sayfasına bakabilirler. zira biz pointer'ların kendisi ile değil de, go dilinde nasıl kullanabileceğimiz ile ilgileneceğiz.
 
-pointer'ları kullanırken **"*"** ve **"&"** karekterlerini sıkça kullanırız.
+pointer'ları kullanırken `*` ve `&` karekterlerini sıkça kullanırız.
 
-**"&"** bize bir değerin bellek adresini döndürür. **"*"** ise tam tersidir. yani bir bellek adresinin değerini döndürür.
+`&` bize bir değerin bellek adresini döndürür. `*` ise tam tersidir. yani bir bellek adresinin değerini döndürür.
 
 örnek ile görelim,
 
@@ -46,10 +46,12 @@ pointer'ları kullanırken **"*"** ve **"&"** karekterlerini sıkça kullanırı
 
 bu kodun çıktısı, aşağıdaki gibi'dir.
 
+{% highlight go %}
     değişkenin değeri:  Ali
     değişkenin bellek adresi:  0x1b4730
     bellek adresinin değeri:  Ali
     adi değişkeninin değeri:  Veli
     adiPointer değişkeninin değeri:  Veli
+{% endhighlight %}
 
 inanmazsanız [buradan](http://play.golang.org/p/MiCA-rbmQB) bakabilirsiniz :)
