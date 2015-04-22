@@ -46,12 +46,10 @@ pointer'ları kullanırken `*` ve `&` karekterlerini sıkça kullanırız.
 
 bu kodun çıktısı, aşağıdaki gibi'dir.
 
-{% highlight go %}
-    değişkenin değeri:  Ali
-    değişkenin bellek adresi:  0x1b4730
-    bellek adresinin değeri:  Ali
-    adi değişkeninin değeri:  Veli
-    adiPointer değişkeninin değeri:  Veli
-{% endhighlight %}
+> değişkenin değeri:  Ali
+> değişkenin bellek adresi:  0x1b4730
+> bellek adresinin değeri:  Ali
+> adi değişkeninin değeri:  Veli
+> adiPointer değişkeninin değeri:  Veli
 
 inanmazsanız [buradan](http://play.golang.org/p/MiCA-rbmQB) bakabilirsiniz :)
