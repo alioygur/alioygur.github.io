@@ -5,19 +5,15 @@ categories:
 - go
 ---
 
-pointer yani işaretçiler, sadece go diline özel değildir, dinamik veya statik olsun tüm dillerde vardır. örneğin PHP.
+pointer yani işaretçiler, sadece go diline özel değildir, dinamik veya statik olsun çoğu dillerde vardır. örneğin PHP.
 
-kod yazarken, tanımladınız bütün değerler(değişkenler, sınıflar, vs.), bellek'te, "adı, değeri, ve adresi" şeklinde kabaca 3 sütün'da tutulur.
+kod yazarken, tanımladığınız bütün değerler(değişkenler, sınıflar, vs.), bellek'te, "adı, değeri, ve adresi" şeklinde kabaca 3 sütün'da tutulur.
 
 Pointer demek, bir değişkenin veya değerin bellek adresi demektir. bellek adresi "0x0000ffff" gibi, hexadecimal(onaltılık tabanda) bir değerdir.
 
 Pointer'ların ne olduğu hakkında hiç bilgisi olmayanlar, [wiki](http://tr.wikipedia.org/wiki/%C4%B0%C5%9Faret%C3%A7iler) sayfasına bakabilirler. zira biz pointer'ların kendisi ile değil de, go dilinde nasıl kullanabileceğimiz ile ilgileneceğiz.
 
 pointer'ları kullanırken **"*"** ve **"&"** karekterlerini sıkça kullanırız.
-
-```
-var degisken string = "değişken değeri"
-```
 
 **"&"** bize bir değerin bellek adresini döndürür. **"*"** ise tam tersidir. yani bir bellek adresinin değerini döndürür.
 
