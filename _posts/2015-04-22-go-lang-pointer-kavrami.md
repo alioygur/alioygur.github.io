@@ -19,6 +19,7 @@ pointer'ları kullanırken **"*"** ve **"&"** karekterlerini sıkça kullanırı
 
 örnek ile görelim,
 
+{% highlight go %}
     package main
 
     import "fmt"
@@ -41,6 +42,7 @@ pointer'ları kullanırken **"*"** ve **"&"** karekterlerini sıkça kullanırı
         fmt.Println("adi değişkeninin değeri: ", adi)
         fmt.Println("adiPointer değişkeninin değeri: ", *adiPointer)
     }
+{% endhighlight %}
 
 bu kodun çıktısı, aşağıdaki gibi'dir.
 
