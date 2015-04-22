@@ -19,39 +19,35 @@ pointer'ları kullanırken **"*"** ve **"&"** karekterlerini sıkça kullanırı
 
 örnek ile görelim,
 
-```
-package main
+    package main
 
-import "fmt"
+    import "fmt"
 
-var adi string = "Ali"
-// buraya dikkat etmeniz gerekiyor. biz bu değişkenin tipini string değil de *string olarak
-// belirttik. yani diyoruz ki, bu değişkenin değeri bir "string değerin bellek adresi" olacaktır.
-var adiPointer *string = &adi
+    var adi string = "Ali"
+    // buraya dikkat etmeniz gerekiyor. biz bu değişkenin tipini string değil de *string olarak
+    // belirttik. yani diyoruz ki, bu değişkenin değeri bir "string değerin bellek adresi" olacaktır.
+    var adiPointer *string = &adi
 
-func main() {
-    fmt.Println("değişkenin değeri: ", adi)
-    fmt.Println("değişkenin bellek adresi: ", adiPointer)
-    fmt.Println("bellek adresinin değeri: ", *adiPointer)
+    func main() {
+        fmt.Println("değişkenin değeri: ", adi)
+        fmt.Println("değişkenin bellek adresi: ", adiPointer)
+        fmt.Println("bellek adresinin değeri: ", *adiPointer)
 
-    // iki değişken de arka planda aynı adresi işaret ettikleri için
-    // birini değiştirirseniz diğeride değişecektir.
+        // iki değişken de arka planda aynı adresi işaret ettikleri için
+        // birini değiştirirseniz diğeride değişecektir.
 
-    *adiPointer = "Veli"
+        *adiPointer = "Veli"
 
-    fmt.Println("adi değişkeninin değeri: ", adi)
-    fmt.Println("adiPointer değişkeninin değeri: ", *adiPointer)
-}
-```
+        fmt.Println("adi değişkeninin değeri: ", adi)
+        fmt.Println("adiPointer değişkeninin değeri: ", *adiPointer)
+    }
 
 bu kodun çıktısı, aşağıdaki gibi'dir.
 
-```
-değişkenin değeri:  Ali
-değişkenin bellek adresi:  0x1b4730
-bellek adresinin değeri:  Ali
-adi değişkeninin değeri:  Veli
-adiPointer değişkeninin değeri:  Veli
-```
+    değişkenin değeri:  Ali
+    değişkenin bellek adresi:  0x1b4730
+    bellek adresinin değeri:  Ali
+    adi değişkeninin değeri:  Veli
+    adiPointer değişkeninin değeri:  Veli
 
 inanmazsanız [buradan](http://play.golang.org/p/MiCA-rbmQB) bakabilirsiniz :)
