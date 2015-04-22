@@ -35,7 +35,7 @@ pointer'ları kullanırken `*` ve `&` karekterlerini sıkça kullanırız.
         fmt.Println("bellek adresinin değeri: ", *adiPointer)
 
         // iki değişken de arka planda aynı adresi işaret ettikleri için
-        // birini değiştirirseniz diğeride değişecektir.
+        // birini değiştirirseniz, diğeri de değişecektir.
 
         *adiPointer = "Veli"
 
