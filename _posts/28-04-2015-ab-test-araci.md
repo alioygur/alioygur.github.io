@@ -22,49 +22,47 @@ aracın çıktısını inceleyelim.
 
 yukarıdaki komutu çalıştırıp kısa bir süre bekledikten sonra aşağıdaki çıktı gibi bir çıktı alacağız.
 
-```
-This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
+    This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+    Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+    Licensed to The Apache Software Foundation, http://www.apache.org/
 
-Benchmarking example.org (be patient).....done
+    Benchmarking example.org (be patient).....done
 
 
-Server Software:        ECS
-Server Hostname:        example.org
-Server Port:            80
+    Server Software:        ECS
+    Server Hostname:        example.org
+    Server Port:            80
 
-Document Path:          /
-Document Length:        1270 bytes
+    Document Path:          /
+    Document Length:        1270 bytes
 
-Concurrency Level:      10
-Time taken for tests:   2.593 seconds
-Failed requests:        0
-Total transferred:      161000 bytes
-HTML transferred:       127000 bytes
-Requests per second:    38.56 [#/sec] (mean)
-Time per request:       259.350 [ms] (mean)
-Time per request:       25.935 [ms] (mean, across all concurrent requests)
-Transfer rate:          60.62 [Kbytes/sec] received
+    Concurrency Level:      10
+    Time taken for tests:   2.593 seconds
+    Failed requests:        0
+    Total transferred:      161000 bytes
+    HTML transferred:       127000 bytes
+    Requests per second:    38.56 [#/sec] (mean)
+    Time per request:       259.350 [ms] (mean)
+    Time per request:       25.935 [ms] (mean, across all concurrent requests)
+    Transfer rate:          60.62 [Kbytes/sec] received
 
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:      123  127   2.5    126     134
-Processing:   126  129   2.4    128     135
-Waiting:      125  129   2.4    128     134
-Total:        249  256   4.9    254     269
+    Connection Times (ms)
+                  min  mean[+/-sd] median   max
+    Connect:      123  127   2.5    126     134
+    Processing:   126  129   2.4    128     135
+    Waiting:      125  129   2.4    128     134
+    Total:        249  256   4.9    254     269
 
-Percentage of the requests served within a certain time (ms)
-  50%    254
-  66%    257
-  75%    261
-  80%    262
-  90%    264
-  95%    267
-  98%    267
-  99%    269
- 100%    269 (longest request)
- ```
+    Percentage of the requests served within a certain time (ms)
+      50%    254
+      66%    257
+      75%    261
+      80%    262
+      90%    264
+      95%    267
+      98%    267
+      99%    269
+     100%    269 (longest request)
 
 Şimdi önemli olan kısımlara değinelim.
 
