@@ -64,7 +64,7 @@ yukarıdaki komutu çalıştırıp kısa bir süre bekledikten sonra aşağıdak
       99%    269
      100%    269 (longest request)
 
-Şimdi önemli olan kısımlara değinelim.
+##Çıktıyı yorumlayalım;
 
     Time taken for tests:   2.593 seconds
 
